@@ -1,0 +1,116 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #bcbec0; }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
+.mainnav div {
+  text-align: center; }
+  .mainnav div a {
+    display: block;
+    padding: 10px;
+    background-color: #000;
+    color: #fff; }
+.mainnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.mainnav a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  background-color: #000;
+  color: #fff; }
+
+.upcomingnav div {
+  text-align: center; }
+  .upcomingnav div a {
+    display: block;
+    padding: 10px;
+    background-color: #000;
+    color: #fff; }
+.upcomingnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.upcomingnav a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  background-color: #000;
+  color: #fff; }
+
+.red {
+  border-left: 4px solid #ed1c24; }
+  .red a:hover {
+    background-color: #ed1c24; }
+
+.yellow {
+  border-left: 4px solid #fff200; }
+  .yellow a:hover {
+    background-color: #fff200; }
+
+.orange {
+  border-left: 4px solid #f29c33; }
+  .orange a:hover {
+    background-color: #f29c33; }
+
+.purple {
+  border-left: 4px solid #9c3993; }
+  .purple a:hover {
+    background-color: #9c3993; }
+
+.green {
+  border-left: 4px solid #00a651; }
+  .green a:hover {
+    background-color: #00a651; }
+
+.blue {
+  border-left: 4px solid #00aeef; }
+  .blue a:hover {
+    background-color: #00aeef; }
+
+.logo a {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 207px;
+  text-indent: -9999px;
+  background: url(../img/Onelogo.png) no-repeat 0 0;
+  /* Fallback */
+  background-image: linear-gradient(transparent, transparent), url(../img/Onelogo.svg); }
+
+.headimage {
+  background-image: url(../img/burninghead.png);
+  max-width: 100%;
+  background-repeat: no-repeat; }
+  .headimage h1 {
+    color: #fff;
+    margin: 0  0 10px 0; }
+  .headimage a {
+    color: #fff; }
+
+img {
+  max-width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

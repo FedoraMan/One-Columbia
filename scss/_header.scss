@@ -1,0 +1,14 @@
+.logo {
+
+	
+	a{
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+		width: 200px;
+		height: 207px;
+		text-indent: -9999px;
+		background: url(../img/Onelogo.png) no-repeat 0 0; /* Fallback */
+		background-image: linear-gradient(transparent, transparent), url(../img/Onelogo.svg);
+	}
+}

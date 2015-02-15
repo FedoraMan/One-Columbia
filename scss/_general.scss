@@ -1,0 +1,27 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #bcbec0;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}

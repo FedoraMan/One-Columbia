@@ -1,0 +1,118 @@
+
+.mainnav {
+	
+	div {
+		text-align: center;
+
+		a{
+			display: block;
+			padding: 10px;
+			background-color: #000;
+			color: #fff;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-align: center;
+		display: block;
+		padding: 10px;
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+.upcomingnav {
+	
+	div {
+		text-align: center;
+
+		a{
+			display: block;
+			padding: 10px;
+			background-color: #000;
+			color: #fff;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-align: center;
+		display: block;
+		padding: 10px;
+		background-color: #000;
+		color: #fff;
+	}
+}
+	
+
+.red {
+	border-left: 4px solid #ed1c24;
+
+	a{
+		&:hover {
+			background-color: #ed1c24;
+		}
+	}
+}
+
+.yellow {
+	border-left: 4px solid #fff200;
+
+	a{
+		&:hover {
+			background-color: #fff200;
+		}
+	}
+}
+
+.orange {
+	border-left: 4px solid #f29c33;
+
+	a{
+		&:hover {
+			background-color: #f29c33;
+		}
+	}
+}
+
+.purple {
+	border-left: 4px solid #9c3993;
+
+	a{
+		&:hover {
+			background-color: #9c3993;
+		}
+	}
+}
+
+.green {
+	border-left: 4px solid #00a651;
+	
+	a{
+		&:hover {
+			background-color: #00a651;
+		}
+	}
+}
+
+.blue {
+	border-left: 4px solid #00aeef;
+	
+	a{
+		&:hover {
+			background-color: #00aeef;
+		}
+	}
+}
+
