@@ -3,7 +3,9 @@ html {
   font-size: 1em;
   line-height: 1.4;
   background-color: #bcbec0;
-  font-family: "Open Sans", Helvetica, Sans-serif; }
+  font-family: "Open Sans", Helvetica, Sans-serif;
+  max-width: 1000px;
+  margin: 0 auto; }
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -24,6 +26,9 @@ html {
 a {
   text-decoration: none; }
 
+@media (min-width: 620px) {
+  .mainnav {
+    position: relative; } }
 .mainnav div {
   text-align: center; }
   .mainnav div a {
@@ -31,16 +36,29 @@ a {
     padding: 10px;
     background-color: #000;
     color: #fff; }
+    @media (min-width: 620px) {
+      .mainnav div a {
+        display: none; } }
 .mainnav ul {
+  display: none;
   list-style: none;
   margin: 0;
   padding: 0; }
+  @media (min-width: 620px) {
+    .mainnav ul {
+      display: inline !important; } }
+@media (min-width: 620px) {
+  .mainnav li {
+    display: inline-block; } }
 .mainnav a {
   text-align: center;
   display: block;
   padding: 10px;
   background-color: #000;
   color: #fff; }
+  @media (min-width: 770px) {
+    .mainnav a {
+      font-size: 1.3em; } }
 
 .upcomingnav div {
   text-align: center; }
@@ -49,10 +67,20 @@ a {
     padding: 10px;
     background-color: #000;
     color: #fff; }
+    @media (min-width: 848px) {
+      .upcomingnav div a {
+        display: none; } }
 .upcomingnav ul {
+  display: none;
   list-style: none;
   margin: 0;
   padding: 0; }
+  @media (min-width: 848px) {
+    .upcomingnav ul {
+      display: inline !important; } }
+@media (min-width: 848px) {
+  .upcomingnav li {
+    display: inline-block; } }
 .upcomingnav a {
   text-align: center;
   display: block;
@@ -62,54 +90,144 @@ a {
 
 .red {
   border-left: 4px solid #ed1c24; }
+  @media (min-width: 848px) {
+    .red {
+      border-top: 4px solid #ed1c24;
+      border-left: none; } }
   .red a:hover {
     background-color: #ed1c24; }
 
 .yellow {
   border-left: 4px solid #fff200; }
+  @media (min-width: 848px) {
+    .yellow {
+      border-top: 4px solid #fff200;
+      border-left: none; } }
   .yellow a:hover {
     background-color: #fff200; }
 
 .orange {
   border-left: 4px solid #f29c33; }
+  @media (min-width: 848px) {
+    .orange {
+      border-top: 4px solid #f29c33;
+      border-left: none; } }
   .orange a:hover {
     background-color: #f29c33; }
 
 .purple {
   border-left: 4px solid #9c3993; }
+  @media (min-width: 848px) {
+    .purple {
+      border-top: 4px solid #9c3993;
+      border-left: none; } }
   .purple a:hover {
     background-color: #9c3993; }
 
 .green {
   border-left: 4px solid #00a651; }
+  @media (min-width: 848px) {
+    .green {
+      border-top: 4px solid #00a651;
+      border-left: none; } }
   .green a:hover {
     background-color: #00a651; }
 
 .blue {
   border-left: 4px solid #00aeef; }
+  @media (min-width: 848px) {
+    .blue {
+      border-top: 4px solid #00aeef;
+      border-left: none; } }
   .blue a:hover {
     background-color: #00aeef; }
 
-.logo a {
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-  width: 200px;
-  height: 207px;
-  text-indent: -9999px;
-  background: url(../img/Onelogo.png) no-repeat 0 0;
-  /* Fallback */
-  background-image: linear-gradient(transparent, transparent), url(../img/Onelogo.svg); }
+@media (min-width: 620px) {
+  .right {
+    float: right; } }
+
+@media (min-width: 620px) {
+  .left {
+    float: left; } }
+
+@media (min-width: 620px) {
+  .top {
+    border-top: 4px solid #ed1c24;
+    border-left: none; } }
+
+@media (min-width: 620px) {
+  .top2 {
+    border-top: 4px solid #f29c33;
+    border-left: none; } }
+
+@media (min-width: 620px) {
+  .top3 {
+    border-top: 4px solid #00aeef;
+    border-left: none; } }
+
+@media (min-width: 620px) {
+  .top4 {
+    border-top: 4px solid #9c3993;
+    border-left: none; } }
+
+header {
+  position: relative; }
+
+.logo {
+  margin: 0; }
+  .logo a {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    width: 140px;
+    height: 147px;
+    text-indent: -9999px;
+    background: url(../img/Onelogo.png) no-repeat 0 0;
+    /* Fallback */
+    background-image: linear-gradient(transparent, transparent), url(../img/Onelogo.svg); }
 
 .headimage {
-  background-image: url(../img/burninghead.png);
+  background-image: url(../img/burninghead.jpg);
   max-width: 100%;
-  background-repeat: no-repeat; }
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 60px;
+  position: relative;
+  margin: 0 auto;
+  clear: both; }
+  .headimage img {
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 400px; }
+    @media (min-width: 620px) {
+      .headimage img {
+        margin-left: 30%;
+        margin-right: 30%; } }
   .headimage h1 {
     color: #fff;
-    margin: 0  0 10px 0; }
+    margin: 0  0 10px 0;
+    display: none; }
   .headimage a {
-    color: #fff; }
+    position: absolute;
+    margin: 10px auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    width: 140px;
+    padding: 10px;
+    background-color: #b73744;
+    border-radius: 7px;
+    box-shadow: 2px 2px #000; }
+    .headimage a:active {
+      background-color: #661c1b;
+      box-shadow: inset 2px 2px #000; }
+
+.eventhead {
+  background-image: url(../img/eventheader.png);
+  padding: 45px;
+  color: #fff; }
 
 img {
   max-width: 100%; }
@@ -117,11 +235,17 @@ img {
 @media (min-width: 620px) {
   .upcomingcontent {
     float: right;
-    width: 50%; } }
+    width: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px; } }
+@media (min-width: 848px) {
+  .upcomingcontent {
+    max-width: 424px; } }
 .upcomingcontent h2 {
   text-align: center;
   margin: 0 auto;
-  width: 80%; }
+  width: 100%;
+  margin: 20px 0; }
 
 .upcomingevents {
   background-color: #fff;
@@ -133,40 +257,56 @@ img {
   .upcomingevents div {
     margin-bottom: 50px; }
 
-.onagate div h3 {
-  margin-bottom: 0px; }
-.onagate div p {
-  margin-top: 3px;
-  font-size: .70em; }
-
-.henderson {
-  clear: both; }
-  .henderson div h3 {
+.onagate div {
+  padding-left: 120px; }
+  .onagate div h3 {
     margin-bottom: 0px; }
-  .henderson div p {
+  .onagate div p {
     margin-top: 3px;
     font-size: .70em; }
 
+.henderson {
+  clear: both; }
+  .henderson div {
+    padding-left: 120px; }
+    .henderson div h3 {
+      margin-bottom: 0px; }
+    .henderson div p {
+      margin-top: 3px;
+      font-size: .70em; }
+
 .trojan {
   clear: both; }
-  .trojan div h3 {
-    margin-bottom: 0px; }
-  .trojan div p {
-    margin-bottom: 0px;
-    font-size: .70em; }
+  .trojan div {
+    padding-left: 120px; }
+    .trojan div h3 {
+      margin-bottom: 0px; }
+    .trojan div p {
+      margin-bottom: 10px;
+      font-size: .70em; }
 
 .search {
   clear: both;
   width: 80%;
-  margin: 10px auto;
+  margin: 33px auto;
   text-align: center; }
+  .search .bar {
+    width: 243px;
+    margin: 0 auto; }
+  .search .sbutton {
+    background-image: url(../img/search.png);
+    width: 50px;
+    height: 45px;
+    text-indent: -9999999px;
+    float: right; }
   @media (min-width: 620px) {
     .search {
       float: left;
-      width: 50%;
+      width: 48%;
       clear: left; } }
   .search input {
-    margin-top: 15px; }
+    margin-top: 15px;
+    padding: 10px; }
 
 table {
   background-color: #fff;
@@ -174,15 +314,31 @@ table {
   table a {
     color: #000;
     padding: 8px; }
+    @media (min-width: 770px) {
+      table a {
+        font-size: 1.3em; } }
 
 .month {
   background-color: #000;
   color: #fff;
   position: relative; }
+  @media (min-width: 770px) {
+    .month {
+      font-size: 1.3em; } }
+
+.button {
+  color: #fff;
+  width: 140px;
+  padding: 10px;
+  background-color: #b73744;
+  border-radius: 7px;
+  box-shadow: 2px 2px #000; }
+  .button:active {
+    background-color: #661c1b;
+    box-shadow: inset 2px 2px #000; }
 
 footer {
   margin: 0 auto;
-  width: 100%;
   background-color: #000;
   color: #fff;
   padding: 10px;
@@ -192,7 +348,8 @@ footer {
     width: 100%; }
   footer .social {
     list-style: none;
-    margin: 0 auto; }
+    margin: 0 auto;
+    float: right; }
     footer .social li {
       display: inline; }
 
