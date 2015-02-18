@@ -46,7 +46,7 @@
 		padding: 10px;
 		background-color: #000;
 		color: #fff;
-		@include breakpoint($medium) {
+		@include breakpoint($small) {
 			font-size: 1.3em;
 		}
 	}
@@ -83,9 +83,16 @@
 		li {
 
 		@include breakpoint($large){
-				display: inline-block;
+				display: block;
+				float: left;
 
 			}
+
+		a {
+			@include breakpoint($large){
+				padding-left: 13.5px;
+			}
+		}
 	}
 
 	a {
@@ -97,6 +104,50 @@
 	}
 }
 
+.eventnav {
+
+	@include breakpoint($small){
+				width: 40%;
+				margin-left: 3%;
+				margin-top: 10px;
+				float: left;
+			}
+
+	div {
+		text-align: center;
+
+		a{
+			display: block;
+			padding: 10px;
+			background-color: #000;
+			color: #fff;
+			
+		}
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		@include breakpoint($large){
+		
+			}
+	}
+
+		li {
+
+	
+	}
+
+	a {
+		text-align: center;
+		display: block;
+		padding: 10px;
+		background-color: #000;
+		color: #fff;
+	}
+}
 	
 
 .red {
@@ -175,6 +226,71 @@
 		border-top: 4px solid #00aeef;
 		border-left: none;
 	}
+	
+	a{
+		&:hover {
+			background-color: #00aeef;
+		}
+	}
+}
+
+.red2 {
+	border-left: 4px solid #ed1c24;
+
+
+	a{
+		&:hover {
+			background-color: #ed1c24;
+		}
+	}
+}
+
+.yellow2 {
+	border-left: 4px solid #fff200;
+
+
+	a{
+		&:hover {
+			background-color: #fff200;
+		}
+	}
+}
+
+.orange2 {
+	border-left: 4px solid #f29c33;
+
+
+	a{
+		&:hover {
+			background-color: #f29c33;
+		}
+	}
+}
+
+.purple2 {
+	border-left: 4px solid #9c3993;
+
+
+	a{
+		&:hover {
+			background-color: #9c3993;
+		}
+	}
+}
+
+.green2 {
+	border-left: 4px solid #00a651;
+	
+	
+	a{
+		&:hover {
+			background-color: #00a651;
+		}
+	}
+}
+
+.blue2 {
+	border-left: 4px solid #00aeef;
 	
 	a{
 		&:hover {

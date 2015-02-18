@@ -56,7 +56,7 @@ a {
   padding: 10px;
   background-color: #000;
   color: #fff; }
-  @media (min-width: 770px) {
+  @media (min-width: 620px) {
     .mainnav a {
       font-size: 1.3em; } }
 
@@ -80,8 +80,37 @@ a {
       display: inline !important; } }
 @media (min-width: 848px) {
   .upcomingnav li {
-    display: inline-block; } }
+    display: block;
+    float: left; } }
+@media (min-width: 848px) {
+  .upcomingnav li a {
+    padding-left: 13.5px; } }
 .upcomingnav a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  background-color: #000;
+  color: #fff; }
+
+@media (min-width: 620px) {
+  .eventnav {
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 10px;
+    float: left; } }
+.eventnav div {
+  text-align: center; }
+  .eventnav div a {
+    display: block;
+    padding: 10px;
+    background-color: #000;
+    color: #fff; }
+.eventnav ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.eventnav a {
   text-align: center;
   display: block;
   padding: 10px;
@@ -140,6 +169,36 @@ a {
       border-top: 4px solid #00aeef;
       border-left: none; } }
   .blue a:hover {
+    background-color: #00aeef; }
+
+.red2 {
+  border-left: 4px solid #ed1c24; }
+  .red2 a:hover {
+    background-color: #ed1c24; }
+
+.yellow2 {
+  border-left: 4px solid #fff200; }
+  .yellow2 a:hover {
+    background-color: #fff200; }
+
+.orange2 {
+  border-left: 4px solid #f29c33; }
+  .orange2 a:hover {
+    background-color: #f29c33; }
+
+.purple2 {
+  border-left: 4px solid #9c3993; }
+  .purple2 a:hover {
+    background-color: #9c3993; }
+
+.green2 {
+  border-left: 4px solid #00a651; }
+  .green2 a:hover {
+    background-color: #00a651; }
+
+.blue2 {
+  border-left: 4px solid #00aeef; }
+  .blue2 a:hover {
     background-color: #00aeef; }
 
 @media (min-width: 620px) {
@@ -227,7 +286,8 @@ header {
 .eventhead {
   background-image: url(../img/eventheader.png);
   padding: 45px;
-  color: #fff; }
+  color: #fff;
+  clear: both; }
 
 img {
   max-width: 100%; }
@@ -249,7 +309,8 @@ img {
 
 .upcomingevents {
   background-color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  clear: both; }
   .upcomingevents img {
     width: 100px;
     float: left;
@@ -284,6 +345,13 @@ img {
     .trojan div p {
       margin-bottom: 10px;
       font-size: .70em; }
+
+@media (min-width: 620px) {
+  .eventlist {
+    float: right;
+    width: 45%;
+    margin: 10px;
+    clear: none; } }
 
 .search {
   clear: both;
@@ -337,6 +405,42 @@ table {
     background-color: #661c1b;
     box-shadow: inset 2px 2px #000; }
 
+.next {
+  float: right;
+  margin-right: 10px;
+  font-size: 3em;
+  color: #fff; }
+
+.pagenav {
+  clear: both; }
+
+.onagateevent {
+  width: 90%;
+  margin: 20px auto; }
+  @media (min-width: 620px) {
+    .onagateevent img {
+      float: left;
+      width: 45%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      clear: both;
+      max-width: 324px; } }
+  .onagateevent h1 {
+    margin-bottom: 0;
+    text-align: center; }
+  .onagateevent .date {
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center; }
+  @media (min-width: 620px) {
+    .onagateevent .aboutevent {
+      float: right;
+      width: 45%;
+      margin-bottom: 20px; } }
+
+span {
+  font-weight: bold; }
+
 footer {
   margin: 0 auto;
   background-color: #000;
@@ -352,5 +456,8 @@ footer {
     float: right; }
     footer .social li {
       display: inline; }
+    footer .social a {
+      font-size: 1.5em;
+      color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
