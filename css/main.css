@@ -1,8 +1,11 @@
+* {
+  box-size: border-box; }
+
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  background-color: #bcbec0;
+  background-color: #555;
   font-family: "Open Sans", Helvetica, Sans-serif;
   max-width: 1000px;
   margin: 0 auto; }
@@ -230,7 +233,8 @@ a {
     border-left: none; } }
 
 header {
-  position: relative; }
+  position: relative;
+  background-color: #bcbec0; }
 
 .logo {
   margin: 0; }
@@ -244,6 +248,9 @@ header {
     background: url(../img/Onelogo.png) no-repeat 0 0;
     /* Fallback */
     background-image: linear-gradient(transparent, transparent), url(../img/Onelogo.svg); }
+
+body {
+  background-color: #bcbec0; }
 
 .headimage {
   background-image: url(../img/burninghead.png);
@@ -359,7 +366,7 @@ img {
   margin: 33px auto;
   text-align: center; }
   .search .bar {
-    width: 243px;
+    width: 276px;
     margin: 0 auto; }
   .search .sbutton {
     background-image: url(../img/search.png);
@@ -374,7 +381,8 @@ img {
       clear: left; } }
   .search input {
     margin-top: 15px;
-    padding: 10px; }
+    padding: 10px;
+    width: 200px; }
 
 table {
   background-color: #fff;
@@ -401,6 +409,8 @@ table {
   background-color: #b73744;
   border-radius: 7px;
   box-shadow: 2px 2px #000; }
+  .button:hover {
+    color: #000; }
   .button:active {
     background-color: #661c1b;
     box-shadow: inset 2px 2px #000; }
